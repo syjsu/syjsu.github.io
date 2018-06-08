@@ -7,11 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <script type="text/javascript" src="./lib/vue.js"></script>
     <script type="text/javascript" src="./lib/vue-resource.js"></script>
-    <script type="text/javascript" src="./lib/bootstrap.min.css"></script>
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap.css">
 </head>
 
 <body>
-    
+    <!-- 软件下载 -->
+    <div id="app" class="wrap" style="margin:80px auto;">
+        <div class="container">
+            <div class="media load-item">
+                <div class="media-left">
+                    <a href="#">
+                    <img class="media-avatar"  height="150px" width="150px"  src="http://7xtdoi.com1.z0.glb.clouddn.com/icon512scratch.png" alt="...">
+                </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"> Magic Scratch( Scratch编程软件 )</h4>
+                    <p>“Magic Scratch”是魔法图书馆对美国麻省理工的Scratch儿童编程软件进行二次开发的汉化版软件， 这是一套图形化的程序设计软件，适合6-15岁的中国孩子使用的程序设计入门软件。Magic Scratch中加入了小刺猬PP的可爱卡通形象，让孩子能够利用程序亲自创造可爱的卡通形象，从而增添孩子学习编程的兴趣。Magic Scratch只需要通过简易的鼠标拖拉方式，将指令从程序指令区移进脚本区，就可以完成简单的程序编写，每个6岁以上的孩子都能够在短时间内轻松掌握编程的技巧。它可以让孩子轻松地规划程序设计的剧情、动画、游戏、音乐等，让孩子在不知不觉中，学习程序语言的概念，进而增加推理与逻辑概念，强化孩子的思维。
+                    </p>
+                </div>
+                <div class="progress btn btn-default btn-block" v-on:click="btnClick()" style="height: 35px;color: #000000;background-color: #FFFFFF;padding: 0px">
+                    <div class="progress-bar bg-success" :style="'width:'+num+'%'"></div><div style="font-size: 16px;left: 50%;padding-top: 6px;text-align: center;position: absolute;z-index: 1;">获取</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 软件下载 -->
+    <script type="text/javascript">
+    //Vue主程序
+    var vm = new Vue({
+        //网页模板
+        el: '#app',
+        components: {},
+        //全局变量
+        data: function() {
+            return {
+                num:0,
+                url:""
+            }
+        },
+        methods: {
+            download: function(url) {
+                console.log(url);
+                var self = this;
+                this.$http.get(url, {
+                    resposeType: 'blob',
+                    progress: function(event) {
+                        self.num = (event.loaded/event.total*100).toFixed(0);
+                        //console.log(self.num+"%");
+                    }
+                }).then(
+                    (res) => {
+                        console.log(res);
+                        var blob = new Blob([res.data], { type: 'application/octet-stream' })
+                        // if (window.navigator.msSaveOrOpenBlob) { //msSaveOrOpenBlob方法返回bool值
+                            //navigator.msSaveBlob(blob, "fileName"); //本地保存
+                        // } else {
+                            // var link = document.createElement('a'); //a标签下载
+                            // link.href = window.URL.createObjectURL(blob);
+                            // link.download = "fileName";
+                            // link.click();
+                            //window.URL.revokeObjectURL(link.href);
+                        // }
+                    }
+                );
+            },
+
+            btnClick: function() {
+                console.log(2333);
+                this.download("http://download.xthinking.net/Magic%20Scratch_windows_2.5.0.exe");
+            }
+        }
+    });
+    </script>
 </body>
 
 </html>
