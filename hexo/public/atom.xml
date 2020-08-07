@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>tayasui</title>
+  
+  <subtitle>a</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="syjsu.github.io/"/>
+  <updated>2017-03-22T12:08:02.137Z</updated>
+  <id>syjsu.github.io/</id>
+  
+  <author>
+    <name>syjsu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="syjsu.github.io/2020/08/07/hello-world/"/>
+    <id>syjsu.github.io/2020/08/07/hello-world/</id>
+    <published>2020-08-07T07:41:55.218Z</published>
+    <updated>2017-03-22T12:08:02.137Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://portablehexo.bitmoe.cn/hexopp/hexop.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;本版本仅适用于Win环境&lt;/strong&gt;&lt;br&gt;本文关键字：
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,123 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: tayasui
+subtitle: a
+description: a
+author: syjsu
+language: zh-CN
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: syjsu.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 12
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-matery
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
+
+search:
+  path: search.xml
+  field: post
+
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+
+postInfo:
+  date: true
+  update: false
+  wordCount: false # 设置文章字数统计为 true.
+  totalCount: false # 设置站点文章总字数统计为 true.
+  min2read: false # 阅读时长.
+  readCount: false # 阅读次数.
+
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+# 是否在首页显示音乐
+music:
+  enable: true
+  title:          # 非吸底模式有效
+    enable: true
+    show: 听听音乐
+  server: netease   # require music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist    # require song, playlist, album, search, artist
+  id: 503838841     # require song id / playlist id / album id / search keyword
+  fixed: false      # 开启吸底模式
+  autoplay: false   # 是否自动播放
+  theme: '#42b983'
+  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: true  # 列表默认折叠
+
