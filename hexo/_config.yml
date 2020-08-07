@@ -19,7 +19,7 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: ../docs/
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -68,7 +68,6 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
 
 search:
   path: search.xml
@@ -94,7 +93,6 @@ githubEmojis:
   customEmojis:
 
 feed:
-  type: atom
   path: atom.xml
   limit: 20
   hub:
@@ -110,7 +108,6 @@ music:
     enable: true
     show: 听听音乐
   server: netease   # require music platform: netease, tencent, kugou, xiami, baidu
-  type: playlist    # require song, playlist, album, search, artist
   id: 503838841     # require song id / playlist id / album id / search keyword
   fixed: false      # 开启吸底模式
   autoplay: false   # 是否自动播放
@@ -121,3 +118,7 @@ music:
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: true  # 列表默认折叠
 
+  type: git
+  repo: https://syjsu@github.com/syjsu/syjsu.github.io.git
+  branch: master
+  message: 更新博客。
