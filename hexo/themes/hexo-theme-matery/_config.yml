@@ -433,7 +433,7 @@ libs:
     minivaline: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
     jqcloud: https://cdn.bootcdn.net/ajax/libs/jqcloud/1.0.4/jqcloud.min.js #/libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: https://cdn.bootcdn.net/ajax/libs/tocbot/4.12.0/tocbot.min.js #/libs/tocbot/tocbot.min.js
-    canvas_nest: /libs/background/canvas-nest.js
+    canvas_nest: https://cdnjs.loli.net/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js #/libs/background/canvas-nest.js
     ribbon: /libs/background/ribbon.min.js
     ribbonRefresh: /libs/background/ribbon-refresh.min.js
     ribbon_dynamic: /libs/background/ribbon-dynamic.js
