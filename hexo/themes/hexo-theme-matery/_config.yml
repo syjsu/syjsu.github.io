@@ -406,33 +406,33 @@ baiduPush: true
 libs:
   css:
     fontAwesome: /libs/awesome/css/all.css # V5.11.1
-    materialize: /libs/materialize/materialize.min.css # 1.0.0
-    aos: /libs/aos/aos.css
-    animate: /libs/animate/animate.min.css # V3.5.1
-    lightgallery: /libs/lightGallery/css/lightgallery.min.css # V1.6.11
-    aplayer: /libs/aplayer/APlayer.min.css
-    dplayer: /libs/dplayer/DPlayer.min.css
-    gitalk: /libs/gitalk/gitalk.css
-    jqcloud: /libs/jqcloud/jqcloud.css
-    tocbot: /libs/tocbot/tocbot.css
+    materialize: https://cdn.bootcdn.net/ajax/libs/materialize/1.0.0/css/materialize.min.css #/libs/materialize/materialize.min.css # 1.0.0
+    aos: https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.css #/libs/aos/aos.css
+    animate: https://cdn.bootcdn.net/ajax/libs/animate.css/3.5.1/animate.min.css #/libs/animate/animate.min.css # V3.5.1
+    lightgallery: https://cdn.bootcdn.net/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css #/libs/lightGallery/css/lightgallery.min.css # V1.6.11
+    aplayer: https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css #/libs/aplayer/APlayer.min.css
+    dplayer: https://cdn.bootcdn.net/ajax/libs/dplayer/1.23.0/DPlayer.min.css #/libs/dplayer/DPlayer.min.css
+    gitalk: https://cdn.bootcdn.net/ajax/libs/gitalk/1.6.2/gitalk.css #/libs/gitalk/gitalk.css
+    jqcloud: https://cdn.bootcdn.net/ajax/libs/jqcloud/1.0.4/jqcloud.css #/libs/jqcloud/jqcloud.css
+    tocbot: https://cdn.bootcdn.net/ajax/libs/tocbot/4.12.0/tocbot.css #/libs/tocbot/tocbot.css
   js:
-    jquery: /libs/jquery/jquery.min.js
-    materialize: /libs/materialize/materialize.min.js # 1.0.0
-    masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
-    aos: /libs/aos/aos.js
-    scrollProgress: /libs/scrollprogress/scrollProgress.min.js
-    lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
+    jquery: https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js #/libs/jquery/jquery.min.js
+    materialize: https://cdn.bootcdn.net/ajax/libs/materialize/1.0.0/js/materialize.js #/libs/materialize/materialize.min.js # 1.0.0
+    masonry: https://cdn.bootcdn.net/ajax/libs/masonry/4.0.0/masonry.pkgd.min.js #/libs/masonry/masonry.pkgd.min.js # v4.0.0
+    aos: https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.js #/libs/aos/aos.js
+    scrollProgress: https://cdn.bootcdn.net/ajax/libs/scrollprogress/3.0.2/scrollProgress.min.js #/libs/scrollprogress/scrollProgress.min.js
+    lightgallery: https://cdn.bootcdn.net/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js #/libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
     clicklove: /libs/others/clicklove.js
     busuanzi: /libs/others/busuanzi.pure.mini.js
-    aplayer: /libs/aplayer/APlayer.min.js
-    dplayer: /libs/dplayer/DPlayer.min.js
-    crypto: /libs/cryptojs/crypto-js.min.js
-    echarts: /libs/echarts/echarts.min.js
-    gitalk: /libs/gitalk/gitalk.min.js
-    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    aplayer: https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js #/libs/aplayer/APlayer.min.js
+    dplayer: https://cdn.bootcdn.net/ajax/libs/dplayer/1.23.0/DPlayer.min.js #/libs/dplayer/DPlayer.min.js
+    crypto: https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.min.js #/libs/cryptojs/crypto-js.min.js
+    echarts: https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js #/libs/echarts/echarts.min.js
+    gitalk: https://cdn.bootcdn.net/ajax/libs/gitalk/1.6.2/gitalk.js #/libs/gitalk/gitalk.min.js
+    valine: https://cdn.bootcdn.net/ajax/libs/valine/1.4.14/Valine.min.js #/libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
     minivaline: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
-    jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
-    tocbot: /libs/tocbot/tocbot.min.js
+    jqcloud: https://cdn.bootcdn.net/ajax/libs/jqcloud/1.0.4/jqcloud.min.js #/libs/jqcloud/jqcloud-1.0.4.min.js
+    tocbot: https://cdn.bootcdn.net/ajax/libs/tocbot/4.12.0/tocbot.min.js #/libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.js
     ribbon: /libs/background/ribbon.min.js
     ribbonRefresh: /libs/background/ribbon-refresh.min.js
