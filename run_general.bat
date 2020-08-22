@@ -1,3 +1,3 @@
 cd hexo
-hexo generate
+hexo generate -d
 pause
