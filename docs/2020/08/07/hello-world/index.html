@@ -1,0 +1,926 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hello World, tayasui">
+    <meta name="description" content="simple is better">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hello World | tayasui</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/css/my.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/jquery/jquery.min.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="tayasui" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">tayasui</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">tayasui</div>
+        <div class="logo-desc">
+            
+            simple is better
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+    <!-- 鼠标特效 
+    <script type="text/javascript" color="0,205,205" opacity="0.8" zIndex="-2" count="99" pointColor="205,0,0"
+    src="https://cdnjs.loli.net/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"></script>-->
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/medias/featureimages/12.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Hello World</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop.png" alt=""></p>
+<blockquote>
+<p><strong>本版本仅适用于Win环境</strong><br>本文关键字： <strong>Hexo绿色版</strong>，<strong>Hexo便携版</strong>，<strong>Hexo配置</strong>，<strong>Hexo</strong>，<strong>U盘</strong></p>
+</blockquote>
+<p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Markdown 的所有功能；具有超快生成速度，让上百个页面在几秒内瞬间完成渲染；还拥有各式各样的插件等等。</p>
+<p>但是就像很多教程里面写的那样，搭建 Hexo 本地环境，需要安装 Node.js、Git 以及使用 npm 进行安装和配置。这对于毫无经验的新手来说，是一个很大的挑战。同时，由于这些环境的存在，导致如果需要更换计算机的时候，重新安装配置一个新的Hexo环境，又得花费一些功夫。</p>
+<p>所以呢，锵锵，我们整合了一个 Hexo 便携版，来简化本地环境的部署。</p>
+<p>####<strong>版本介绍</strong><br>那么所谓的便携版到底是什么？便携版就是将 Hexo 本地环境所需要的各种依赖环境的整合到一起，做成的不需要安装的版本。</p>
+<p>本便携版（Release 1.0.0）所包含的软件如下：</p>
+<blockquote>
+<ul>
+<li>Git: 2.7.4</li>
+<li>Nodejs: 6.10.1</li>
+<li>Npm: 4.4.1</li>
+<li>Hexo: 3.2.2</li>
+</ul>
+</blockquote>
+<p>为了便携的需要，不能配置固定的环境变量，所以除此之外还有相应的批处理文件，下文将详细介绍。</p>
+<p>####<strong>从零开始，1分钟搭建Hexo写作环境</strong><br>说了这么多，我们这就开始教你如何在1分钟内，从零开始搭建Hexo写作环境！</p>
+<p>#####1 注册一个Github帐号</p>
+<p>1.1 进入<a href="https://github.com" target="_blank" rel="external">Github</a>，并在右边的3个框框中分别填写 用户名、邮箱地址、账户密码，并点击 <strong><code>Sign up for Github</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop2.png" alt="图1.1.1"></p>
+<p>1.2 进入欢迎页面后，点击<strong><code>Finish sign up</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop3.png" alt="图1.2.1"></p>
+<p>1.3 进入到这一步之后（<strong>图1.3.1</strong>），先别记着点任何东西，查看你的邮箱，应该会收到如下的邮件（<strong>图1.3.2</strong>），确认你的邮件。否则，你会看到错误页面（<strong>图1.3.3</strong>）。query完毕之后在<strong>图1.3.1</strong>所示的页面，点击<strong><code>+ New repository</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop5.png" alt="图1.3.1"></p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop6.png" alt="图1.3.2"></p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop7.png" alt="图1.3.3"></p>
+<p>1.4 请在红框中的 <strong><code>Repository name</code></strong> 里面输入 <strong><code>用户名.github.io</code></strong> ( <strong>用户名</strong> 就是你刚刚 <strong>步骤1.1</strong> 中注册的用户名)，然后点击 <strong><code>Create repository</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop8.png" alt="图1.4.1"></p>
+<p>1.5 至此，Github网页注册的部分完毕</p>
+<p>####2 下载HEXO Portable</p>
+<p>2.1 访问我们的 <a href="https://project.bitmoe.cn/PortableHexo/" target="_blank" rel="external">HEXO Portable</a> 页面，或者 <a href="https://github.com/Bitmoe/PortableHexo" target="_blank" rel="external">Github仓库</a> 下载最新的便携版；</p>
+<p>2.2 双击得到的自解压文件，解压到你需要安装博客的地方，可以选择硬盘或者U盘；</p>
+<p>####3 配置你的环境</p>
+<p>3.1 在你的博客的文件夹，你会发现很多批处理文件，我先介绍下各个文件的用途：</p>
+<blockquote>
+<ul>
+<li>配置基本信息 &gt;&gt; 配置博客的基本环境</li>
+<li>配置Github部署 &gt;&gt; 配置博客的部署</li>
+<li>启动命令行 &gt;&gt; 启动带环境变量的Git-Bash，否则无法使用node、npm、git等命令</li>
+<li>新建文章 &gt;&gt; 新建一篇文章</li>
+<li>渲染并本地测试 &gt;&gt; 生成并本地预览</li>
+<li>渲染并部署 &gt;&gt; 生成并部署到GitHub</li>
+<li>重置配置文件 &gt;&gt; 重置_config.yml</li>
+</ul>
+</blockquote>
+<p>3.2 我们继续进行环境配置，双击<strong><code>配置基本信息</code></strong>并按顺序输入以下信息：</p>
+<blockquote>
+<ul>
+<li>主标题：顾名思义</li>
+<li>副标题：顾名思义</li>
+<li>描述：顾名思义</li>
+<li>作者：顾名思义</li>
+<li>网站地址：填写 <strong>用户名.github.io</strong> （此处的用户名为<strong>步骤1.1</strong>中填写的用户名）<br><strong>如果您已经购买了域名，可以参看相关的文章！</strong></li>
+</ul>
+</blockquote>
+<p>3.3 双击<strong><code>配置Github部署</code></strong>并按顺序输入以下信息：</p>
+<blockquote>
+<ul>
+<li>Github的用户名：此处的用户名为<strong>步骤1.1</strong>中填写的用户名</li>
+<li>Github注册邮箱：此处的注册邮箱为<strong>步骤1.1</strong>中填写的注册邮箱</li>
+</ul>
+</blockquote>
+<p>3.4 输入完毕之后，会进行测试部署，等待屏幕提示<strong>下面将进行部署测试，稍后将有一个openssh的对话框出现，请输入你的github用户密码。</strong>的时候，按回车继续；（此处的用户密码为<strong>步骤1.1</strong>中填写的用户密码）</p>
+<p>3.5 然后继续等待，此时屏幕会出现n多行，耐心等待即可；</p>
+<p>3.6 等待屏幕提示<strong>请访问 <a href="https://用户名.github.io" target="_blank" rel="external">https://用户名.github.io</a> 查看是否部署成功！</strong>的时候，在浏览器中输入<strong><a href="https://用户名.github.io" target="_blank" rel="external">https://用户名.github.io</a> </strong>，理论上可以看到你的Hexo站点！（此处的用户名为<strong>步骤1.1</strong>中填写的用户名）</p>
+<p>3.7 至此，你的Hexo环境就配置完成了，这样你的这个Hexo博客文件夹无论移动到哪一台电脑，都能通过<strong>启动命令行</strong>出现的bash命令行，或者其余便捷的批处理文件比如<strong>新建文章</strong>、<strong>渲染并本地测试</strong>、<strong>渲染并部署</strong>进行相应的操作。</p>
+<p>3.8 如果你在配置中出错，可以运行<strong>重置配置文件</strong>后，再重复<strong>3.1~3.6步骤</strong></p>
+<p>####4 开始享受纯粹的Hexo写作吧！</p>
+<p>####5 备注</p>
+<blockquote>
+<ul>
+<li>本便携版以及本文均使用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external">CC BY-NC-SA 4.0</a>协议；</li>
+<li>本文所有权归 <a href="http://qistchan.com" target="_blank" rel="external">QistChan</a> &amp; <a href="https://wwww.bitmoe.com" target="_blank" rel="external">Bitmoe Inc.</a> 所有；</li>
+<li>本便携版由 <a href="https://www.bitmoe.com" target="_blank" rel="external">Bitmoe Inc.</a> 维护并提供技术支持；</li>
+<li>需要技术支持可以在<a href="https://github.com/Bitmoe/PortableHexo" target="_blank" rel="external">Github仓库</a> 提交<strong><code>Issues</code></strong>；</li>
+<li>Written with <a href="https://stackedit.io/" target="_blank" rel="external">StackEdit</a>.</li>
+</ul>
+</blockquote>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/08/07/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+
+本版本仅适用于Win环境本文关键字： Hexo绿色版，Hexo便携版，Hexo配置，Hexo，U盘
+
+Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Markdown 的所有功能；具有超快生成速度，让上百
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            syjsu
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/08/07/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+
+本版本仅适用于Win环境本文关键字： Hexo绿色版，Hexo便携版，Hexo配置，Hexo，U盘
+
+Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Markdown 的所有功能；具有超快生成速度，让上百
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            syjsu
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m12 l12 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2012</span>
+            <a href="/about" target="_blank">syjsu</a>
+            <!-- |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> -->
+            <!-- |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a> -->
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2012";
+                    var startMonth = "12";
+                    var startDate = "27";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> -->
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/syjsu/syjsu.github.io@hexo_blog/docs/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
